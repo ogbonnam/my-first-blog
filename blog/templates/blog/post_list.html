@@ -3,17 +3,19 @@
      <title>My FIrst Blog</title>
    </head>
 
-   <body  id="red">
-<style>
- #red {
- background-color: skyblue;
-color: black;
-}
-</style>
-    <h1>DJango Website in Progres</h1>
-     <p>This is very good tutorials from djangogirls.
-    <br>
-They really thought me how to use django. More greese to your elbow.
-</p>
+   <body>
+ <div>
+    <h1><a href="">DJango Website in Progres</a></h1>
+ </div>
+
+{% for post in posts %}
+<div>
+    
+    <h1><a href="">{{ post.title }}</a></h1>
+    <p>published date:{{ post.published_date }}</p>
+    <p>{{ post.text }}</p>
+</div>
+{% endfor %} 
+
    </body>
 </html>
