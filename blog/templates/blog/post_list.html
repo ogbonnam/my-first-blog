@@ -1,12 +1,60 @@
+
 <html>
    <head>
+     {% load staticfiles %}
      <title>My FIrst Blog</title>
-   </head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+     <link rel="stylesheet" href="{% static 'css/blog.css' %}"
+  </head>
+    
    <body>
- <div>
-    <h1><a href="">DJango Website in Progress. Am still learning</a></h1>
- </div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+ <div class="jumbotron">
+<div class="row">
+  <div class="col-sm-8">
+<div class="head-title">
+<h1>LEARN DJANGO</h1>
+    <p>Learn DJango is a website that is devoted to helping you learn a very  popular full stark web development framework for developing
+    responsive, mobile-first projects on the web.</p>
+   <p>
+  <button type="button" class="btn btn-primary btn-lg">Get Started</button>
+   </p>
+</div>
+</div>
+
+  <div class="col-sm-4"><img class="homeimage" src="../static/css/code.jpg"></div>
+</div>
+</div>
+
+
+  
+  
+  
+  
 
 {% for post in posts %}
 <div>
@@ -17,5 +65,12 @@
 </div>
 {% endfor %} 
 
+
+
+
+
+
    </body>
 </html>
+
+

@@ -1,0 +1,29 @@
+ h1 a {
+ color: #5d6d7e;
+ font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.body_text{
+
+ padding-left:30px;
+ padding-right:15px;
+
+}
+
+.title{
+background-color: red;
+
+
+}
+
+.jumbotron{
+margin-top: -25px;
+background-color: #D8CFBE;
+text-align: center;
+}
+
+.homeimage{
+margin-top: -45px;
+height: 400px;
+margin-bottom: -40px;
+}
